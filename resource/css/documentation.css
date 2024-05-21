@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: serif;
+}
+
+.header {
+    padding: 0.5em;
+    background: lightcyan;
+    border-bottom: 1px solid black;
+}
+
+.header-container {
+    padding: 0.25em;
+    background: lightgoldenrodyellow;
+    font-size: 1.75em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+
+    /* or alternatively 
+    
+    flex-flow: row nowrap;
+
+    The safest values for justify-content are flex-start, flex-end, and center.
+    */
+}
+
+.logo {
+    background: lightcoral;
+    flex-grow: 2;
+}
+
+.navbar {
+    background: lightgreen;
+    flex-grow: 6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.search {
+    background: lightseagreen;
+    flex-grow: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.logo a, .navbar a, .search a {
+    text-decoration: none;
+}
+
+.content {
+    background: lightsteelblue;
+    padding: 2em 0;
+}
+
+.content-container-top {
+    margin: 0 5em;
+    padding: 2em 0;
+    background: lightgreen;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.content-container-top img, .content-container-bottom img, .content-article img {
+    width: 30em;
+    height: auto;
+}
+
+.img-container {
+    background: lightgrey;
+    padding: 0.25em;  /* between picture */
+}
+
+.img-text-wrapper {
+    width: 28em;
+    padding: 0.5em 1em;
+    background: yellow;
+}
+
+.img-text {
+    background: lightcoral;
+    padding: 1em 0;
+}
+
+.img-text {
+    color: blueviolet;
+    text-transform: capitalize;
+}
+
+.content-container-bottom {
+    margin: 0 5em;
+    padding: 2em 0;
+    background: lightsalmon;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+}
+
+.img-container-bot {
+    padding: 1em;
+    background: red;
+}
+
+.text-container-bot {
+    margin: 2em;
+    background: lightseagreen;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.text {
+    background: yellow;
+    margin: auto;
+    padding: 0 2em;
+    color: blueviolet;
+    text-transform: capitalize;
+    width: 10em;
+}
+
+.content-article {
+    margin: 0 5em;
+    padding: 2em 0;
+    background: lightgreen;
+}
+
+.container-article {
+    padding: 2em 2em;
+    background: lightseagreen;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.article {
+    padding: 1em 2.5em;
+    background: yellow;
+    flex: 16em;
+}
